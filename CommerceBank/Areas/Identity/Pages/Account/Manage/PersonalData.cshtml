@@ -1,0 +1,28 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Personal Data";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>Your account contains personal data that are stored in our system.</p>
+        <p>
+            If you decide to delete your data, please click the button below. 
+        </p>
+        <p>
+            <strong>Important: Deleting this account means we will remove all your information and your transaction data. Once you delete, your account will not be recovered!</strong>
+        </p>
+        
+        <p>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger">Delete my account</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
