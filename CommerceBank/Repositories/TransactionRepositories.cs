@@ -60,7 +60,7 @@ namespace CommerceBank.Repositories
                 }
                 else
                 {
-                    Trans = Trans.OrderByDescending(n => n.Location).ToList();
+                    Trans = Trans.OrderByDescending(n => n.Id).ToList();
             
                 }
             }
